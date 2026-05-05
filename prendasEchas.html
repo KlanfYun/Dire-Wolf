@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dire Wolf | Prendas listas</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="img/logo_lobo.png">
+    <script src="jsjs.js"></script>
+</head>
+<!-- NAV ------------------------------------------------------------------------------------------------------------
+<div class="caja-flecha">
+    <a href="index.html"><img src="img/flecha.png" alt="" class="flecha"></a>
+</div>
+BOdDY -->
+<div id="navbar"></div>
+<br><br>
+<style>
+.imgListas{
+  opacity: 0; /*Para la animacion*/
+  filter: blur(30px);
+  animation: aparece 0.5s ease-out forwards; /** Aqui la duracion de la animacion */
+  animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+  padding: -1px;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin: 0;
+  width: 100%;
+  margin-top: 3px;
+  border: solid rgba(0, 255, 64, 0.418) 1px;
+}
+.imgListas img{
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  width: 100%;
+}
+.imgListas b{
+  color: white;
+  margin: 10px;
+  backdrop-filter: blur(30px);
+}
+</style>
+<body>
+    <div class="container-grandfather">
+        <h1 style="text-align: center; color:white">Listas</h1>
+        <div class="item-center-x">
+            <b id="subtema">Aqui estan las playeras ya sublimadas y de entrega directa</b>
+        </div>
+        <div class="container-father">
+            <div class="imgListas"><img src="img/zPreparadas/1.jpg" class="imagen-zoom">
+                <b>Talla: M Stock: 1</b>
+                <div class="disponible"><h5>Disponible</h5></div>
+            </div>
+            <div class="imgListas"><img src="img/zPreparadas/2.jpg" class="imagen-zoom">
+                <b>Talla: M Stock: 1</b>
+                <div class="disponible"><h5>Disponible</h5></div>
+            </div>
+            <div class="imgListas"><img src="img/zPreparadas/3.jpg" class="imagen-zoom">
+                <b>Talla: M Stock: 1</b>
+                <div class="disponible"><h5>Disponible</h5></div>
+            </div>
+            <div class="imgListas"><img src="img/zPreparadas/4.jpg" class="imagen-zoom">
+                <b>Talla: M Stock: 0</b>
+                <div class="vendida"><h5>Vendida</h5></div>
+            </div>
+            <div class="imgListas"><img src="img/zPreparadas/5.jpg" class="imagen-zoom">
+                <b>Talla: M</b>
+                <div class="disponible"><h5>Disponible</h5></div>
+            </div>
+            <div class="imgListas"><img src="img/zPreparadas/6.jpg" class="imagen-zoom">
+                <b>Talla: M</b>
+                <div class="disponible"><h5>Disponible</h5></div>
+            </div>
+        </div>
+    </div>
+     <!--** Overlay donde se amplía la imagen ---------------------------------------------------------------------------------------->
+    <div class="zoom-overlay" id="zoomOverlay">
+        <img src="" alt="Imagen ampliada" id="zoomedImg">
+        <div class="zoom-buttons">
+            <button onclick="cerrarZoom()">Cerrar</button>
+            <button onclick="descargarImg()">Descargar</button>
+        </div>
+    </div>
+    <!-- **SCRIPT DE ZOOM------------------------------------------------------------------------------------------------------------- -->
+    <script>
+    const miniaturas = document.querySelectorAll('.imagen-zoom');
+    const overlay = document.getElementById('zoomOverlay');
+    const imagenGrande = document.getElementById('zoomedImg');
+
+    // Clic en cualquier miniatura
+    miniaturas.forEach(imagen => {
+      imagen.addEventListener('click', () => {
+        imagenGrande.src = imagen.src;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    // Cerrar imagen ampliada
+    function cerrarZoom() {
+        overlay.style.display = 'none';
+        imagenGrande.src = '';
+    }
+
+    // Descargar imagen
+    function descargarImg() {
+      const enlace = document.createElement('a');
+      enlace.href = imagenGrande.src;
+      enlace.download = 'imagen-descargada.jpg';
+      enlace.click();
+    }
+    </script>
+    <!--TODO:FOOTER ------------------------------------------------------------------------------------------------------------------------------- -->
+    <footer>
+
+    </footer>
+</body>
+<script src="jsjs.js"></script>
+
+</html>

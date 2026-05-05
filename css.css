@@ -1,0 +1,513 @@
+/** FONTS--------------------- */
+@import url('https://fonts.googleapis.c om/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-image: url(img/zbackback/backback.jpg);
+  background-attachment: fixed;
+  /* Add your background pattern here */
+  /* background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px; */
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto; /*CON ESTO DEJAS SIEMPRE ABAJO EL FOOTER*/
+}
+
+.item-center-x{
+  display: grid;
+  justify-content: center;  
+}
+
+ * nav,b,ol,li,h2,div{ 
+  box-sizing: border-box;
+  }
+
+/**! Nav -----------------------------------------------------------------------------------------------------------*/
+.logo{
+  max-height: 40px;
+  cursor: pointer;
+  margin: auto;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+ol{
+  display: flex;
+  justify-content: center;
+  align-items: center; /*Alinia de manera vertical*/
+  margin: 0;
+  padding: 0;
+}
+
+.Infooo{
+  display: none;
+}
+
+nav {
+  padding-left: 20px;
+  justify-content: start;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  opacity: 0;
+  box-sizing: border-box;
+  animation: aparece 1.5s ease-out forwards; /** Aqui la duracion de la animacion */
+  animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 0px rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 10;
+  gap: 20px;
+}
+
+nav a{
+  justify-content: center;
+  display: flex;
+}
+
+nav div ol h2 a{
+  font-size: 17px;
+  text-shadow: 0 0 10px black;
+  text-decoration: none;
+/*  font-size: clamp(1rem, 2.5vw, 2rem);*/
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.justify-end{
+  justify-content: flex-end;
+  display: flex;
+}
+
+nav ol a:hover {
+  color: rgb(173, 173, 173);
+}
+
+h1{
+  text-shadow: 0 0 30px black;
+  margin-top: 90px;
+}
+
+nav div{
+  justify-content: center;
+  display: flex;
+}
+
+/**TOdo FLECHA -------------------------------------------------------------------------------------------*/
+.caja-flecha{
+  top: 84%;
+  left: 88%;
+  position: fixed;
+  z-index: 11;
+  justify-content: center;
+  display: grid;
+}
+.flecha{
+  position: absolute;
+  width: 60px;
+  z-index: 10;
+  cursor: pointer;
+  margin: auto 0;
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0 0 5px rgb(50, 189, 96,0.5));
+}
+.flecha:hover{
+  animation: ani-flecha 1s; /** Se selecciona la anmimacion y duracion del evento*/
+  animation-delay: 0.5s;
+}
+   @keyframes ani-flecha {
+      25% {
+        transform: translateX(-10px);
+      }
+      50% {
+        transform: translateX(0);
+      }
+      75% {
+        transform: translateX(-10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+/*TODO Blouqes del index ------------------------------------------------------------------------------------------------- */
+.container-grandfather-index{
+  display: flex;
+  background: linear-gradient(
+    to right,
+    rgb(170, 170, 170,1),
+    rgb(39, 39, 39,0.5),
+    rgb(39, 39, 39,0)
+  );
+  margin: 20px auto;
+  width: 80%;
+  border: rgb(0, 194, 0) 1px solid;
+  border-radius:30px ;
+}
+.indexCaja-1{
+  /* border:solid 2px yellow; */
+  width:1000px;
+}
+/*!CONTAINERRRRRRR--------------------------------------------------------------------------------*/
+.container-grandfather{
+  width: 80%;
+  margin: 0 auto;
+}
+.container-grand {
+  width: 100%;
+}
+
+.container-father {
+  display: grid;/* Habilita Grid */
+  grid-template-columns: repeat(5, 1fr);/* 4 columnas de igual tamaño */
+  gap: 10px;/* Espacio entre los elementos */
+  padding: 100px;
+}
+.flex-colum{
+  justify-content: center;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.container-child img {
+  width: 100%;
+  border-radius: 20px 20px 0 0 ;
+  filter: brightness(0.6);
+  transition: 1s;
+}
+
+.container-child img:hover {
+  filter: brightness(1.1);
+}
+
+.container-child b{
+  font-size: small;
+}
+
+.container-child{
+  /* filter: blur(30px); */
+  animation: scale-up-vertical-center 0.7s; /** Aqui la duracion de la animacion */
+  animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+  margin: 0 auto;
+  max-width: 350px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: white;
+  transition: 0.2s ease-out;
+  border: 1px gray solid;
+  border-radius: 20px;
+}
+
+.container-child:hover{
+  scale: 1.01;
+  filter: blur(0px);
+}
+
+.container-child h3{
+  background-color: #1a1a1a;
+  font-size: larger;
+  margin-top: -5px;
+}
+
+.containerr{
+  width: 100%;
+}
+
+.container-child2 img{
+  width: 90%;
+  margin: 10px;
+  margin-top: 30px;
+  filter: unset;
+}
+
+.container-child2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.container-child2 a h2{
+  color: white;
+  text-decoration: underline none;
+}
+.container-child2 a h2:hover{
+  text-decoration: underline;
+}
+.container-child2{
+  max-width: 500px;
+}
+
+#subtema {
+  color: white;
+  margin: auto 0;
+}
+/**! PARA IMAGENES DE CADA CATEGORIA ----------------------------------------------------------------------------- */
+
+.img-cal{
+  /* filter: blur(30px); */
+  animation: scale-up-vertical-center 0.7s ease-out 1;  /*Aqui la duracion de la animacion */
+  animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+}
+.img-cal:hover{
+  animation: rotate-scale-down-horizontal 0.4s linear both;
+  animation: wobble-horizontal-top .8s linear both
+}
+.img-cal img{
+  border-radius: 20px;
+  margin: 0;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.img-cal b{
+  text-align: center;
+  margin: 13px;
+  color: aliceblue;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  text-shadow: 0 0 10px white;
+}
+.vendida{
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  display: grid;
+}
+
+.vendida h5{
+  top: 25%;
+  margin: unset;
+  position: relative;
+  color: white;
+}
+.disponible{
+  width: 100%;
+  height: 30px;
+  border-radius: 0 0 20px 20px;
+  background-color: rgb(0, 255, 42);
+  justify-content: center;
+  display: grid;
+}
+
+.disponible h5{
+  top: 25%;
+  margin: unset;
+  position: relative;
+  color: white;
+}
+/**! ESCALADO DE UNA IMAGEN ---------------------------------------------------------------------------------------- */
+  .imagen-zoom {
+    width: 250px;
+    margin: 10px;
+    cursor: zoom-in;
+    transition: 0.4s ease;
+  }
+  
+  .imagen-zoom:hover {
+    transform: scale(1.003);
+    box-shadow: 0 0 20px rgba(97, 138, 111, 0.658);
+  }
+
+  .zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+    transition: 2s;
+    animation: zoom-overlay 0.5s;
+  }
+  @keyframes zoom-overlay{
+    0%{
+      filter: blur(30px);
+      transform: scale(0.9);
+    }
+    100%{
+      filter: blur(0);
+      transform: scale(1);
+    }
+  }
+  .zoom-overlay img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  }
+
+  .zoom-buttons {
+    margin-top: 20px;
+  }
+
+  .zoom-buttons button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 2s ease;
+  }
+
+  .zoom-buttons button:hover {
+    background-color: #333;
+    color: white;
+    transition: 2s ease-in-out;
+  }
+  /**? FOTER-------------------------------------------------------------------------------------------  */
+  footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 0px rgba(255, 255, 255, 0.5);
+    animation: aparece 1.5s ease-out forwards; /** Aqui la duracion de la animacion */
+    animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+    backdrop-filter: blur(20px);
+  }
+
+/*TODO Estilo para pantallas más pequeñas ----------------------------------------------------------------------*/
+  @media (max-width: 1000px) {
+    .container-father {
+      grid-template-columns: repeat(3,1fr);
+    }
+    p{
+      font-size: larger;
+      padding: 4px;
+    }
+    .flecha{
+      width: 50px;
+    }
+    nav{
+      width: 100%;
+      height: 100%;
+      justify-self: right;
+      gap: 30px;   
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      justify-content: start;
+      align-items: center;
+      padding: 1rem;
+      z-index: 1000;
+      height: auto;
+    }
+    nav a{
+      font-size: 30px;
+    }
+  .logo{
+    cursor: pointer;
+    transform: translateY(3px);
+    margin-left: 40px;
+    max-height: 50px;
+  }
+  .container-child b{
+    font-size: medium;
+  }
+  .container-father{
+    padding: 0;
+  }
+  
+  .Infooo{
+    /* display: grid; */
+    color: white;
+  }
+    
+  }
+
+  /*? ANIMACIONES-------------------------------------------------------------------------- */
+  @keyframes aparece {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+@keyframes scale-up-vertical-center{
+  0% {
+    filter: blur(30px);
+    transform:scaleY(.2);
+  }
+  100%{
+    transform:scaleY(1);
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+
+@keyframes wobble-horizontal-top {
+
+  0%,
+  100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg)
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg)
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg)
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg)
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg)
+  }
+}
+@keyframes rotate-scale-down-horizontal {
+  0% {
+    transform: scale(1) rotateX(0)
+  }
+
+  50% {
+    transform: scale(.5) rotateX(-180deg)
+  }
+
+  100% {
+    transform: scale(1) rotateX(-360deg)
+  }
+}

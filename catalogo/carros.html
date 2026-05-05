@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dire Wolf | Carros</title>
+    <link rel="stylesheet" href="../css.css">
+    <link rel="icon" href="../img/logo_lobo.png">
+    <script src="../jsjs.js"></script>
+</head>
+<!-- NAV --------------------------------------------------------------------------------------------------------------->
+<div id="navbar-catalogo"></div>
+<div class="caja-flecha">
+    <a href="../index.html"><img src="../img/flecha.png" alt="" class="flecha"></a>
+</div>
+<br><br><br><br><br>
+<body>
+    <!-- <video autoplay muted loop playsinline id="bg-video" class="fondo-video">
+    <source src="videos/Standard Mode Creame Una Peque A Animacion   Q-1.mp4" type="video/mp4">
+    </video> -->
+    <div class="container-grandfather"><br><br>
+        <h1 style="text-align: center; color:white">CARROS</h1>
+        <div class="container-father">
+            <div class="img-cal"><img src="../img/carros/1.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/2.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/3.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/4.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/5.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/6.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/7.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/8.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/9.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/10.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/11.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/12.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/13.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/14.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/15.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/16.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/17.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/18.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/19.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/20.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/21.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/22.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/23.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/24.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/25.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/26.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/27.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/28.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/29.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/30.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/31.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/32.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/33.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/34.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/35.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/36.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/37.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/38.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/39.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/40.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/41.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/42.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/43.jpg" class="imagen-zoom"></div>
+            <div class="img-cal"><img src="../img/carros/44.jpg" class="imagen-zoom"></div>
+        </div>
+    </div>
+     <!--** Overlay donde se amplía la imagen ---------------------------------------------------------------------------------------->
+    <div class="zoom-overlay" id="zoomOverlay">
+        <img src="" alt="Imagen ampliada" id="zoomedImg">
+        <div class="zoom-buttons">
+            <button onclick="cerrarZoom()">Cerrar</button>
+            <button onclick="descargarImg()">Descargar</button>
+        </div>
+    </div>
+    <!-- **SCRIPT DE ZOOM------------------------------------------------------------------------------------------------------------- -->
+    <script>
+    const miniaturas = document.querySelectorAll('.imagen-zoom');
+    const overlay = document.getElementById('zoomOverlay');
+    const imagenGrande = document.getElementById('zoomedImg');
+
+    // Clic en cualquier miniatura
+    miniaturas.forEach(imagen => {
+      imagen.addEventListener('click', () => {
+        imagenGrande.src = imagen.src;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    // Cerrar imagen ampliada
+    function cerrarZoom() {
+        overlay.style.display = 'none';
+        imagenGrande.src = '';
+    }
+
+    // Descargar imagen
+    function descargarImg() {
+      const enlace = document.createElement('a');
+      enlace.href = imagenGrande.src;
+      enlace.download = 'imagen-descargada.jpg';
+      enlace.click();
+    }
+    </script>
+    <!--TODO:FOOTER -------------------------------------------------------------- -->
+    <footer>
+
+    </footer>
+</body>
+<script src="../jsjs.js"></script>
+
+</html>

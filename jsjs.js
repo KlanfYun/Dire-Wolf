@@ -1,0 +1,87 @@
+      //** NAVVV--------------------------------------------------------------------------------------------------
+      const nav = `
+            <nav>
+              <div>
+                <a href="index.html">
+                  <img class="logo" src="img/logo-texto.png" px="100" alt="Logo">
+                </a>
+              </div>
+              <div>
+              <ol>
+                <h2><a href="index.html">Inicio</a></h2>
+                <h2><a href="catalogo.html">Catalogo</a></h2>
+                <h2><a href="prendasEchas.html">Listas</a></h2>
+              </ol>
+              </div>
+              <div><b class="Infooo">Hola</b></div>
+              </nav>
+              `
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('navbar').innerHTML = nav;
+      });      
+      const nav_catalogo = `
+            <nav>
+              <div>
+                <a href="../index.html">
+                  <img class="logo" src="../img/logo-texto.png" px="100" alt="Logo">
+                </a>
+              </div>
+              <div>
+                <ol>
+                  <h2><a href="../index.html">Inicio</a></h2>
+                  <h2><a href="../catalogo.html">Catalogo</a></h2>
+                  <h2><a href="../prendasEchas.html">Listas</a></h2>
+                </ol>
+              </div>
+              <div><b class="Infooo">Hola</b></div>
+              </nav>
+      `;
+      document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('navbar-catalogo').innerHTML = nav_catalogo;
+      });
+      //**BACKGROUND PARA CADA CATEGORIA------------------------------------------------------------------------------------------------------------------------------------------------------ */
+      if(document.title != 'Dire Wolf | Catalogo' && document.title != 'Dire Wolf | Contacto' && document.title != 'Dire Wolf | Inicio'){
+        back_img = {
+          Florales: '../img/zbackback/back-flor.jpg',
+          Calakas:  '../img/zbackback/back_calaka.jpg',
+          Artistas: '../img/zbackback/back_artistas.jpg',
+          Anti:     '../img/zbackback/back_anti.jpg',
+          Motos:    '../img/zbackback/back_motos.jpg',
+          Carros:   '../img/zbackback/back_carros.jpg',
+          Urbano:   '../img/zbackback/back_urbano.jpg',
+          Prendas:  'img/prendasechas.jpg'
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            titulo = (document.title).split(" ");
+            cual = titulo[3];
+            document.body.style.backgroundImage = `url('${back_img[cual]}')`;
+            document.body.style.backgroundSize = 'cover';
+        });
+      }
+      //**MARCAR EL NAV EN DONDE ESTE------------------------------------------------------------------------------------------------------------------------------------------------------ */
+      document.addEventListener('DOMContentLoaded', () =>{
+
+      });
+
+      //** PANALES--------------------------------------------------------------------------------------------------
+       const panels = document.querySelectorAll('.panel')
+
+        panels.forEach(panel => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses()
+                panel.classList.add('active')
+            })
+        })
+
+        function removeActiveClasses() {
+            panels.forEach(panel => {
+                panel.classList.remove('active')
+            })
+        }
+
+  //**FOOTER---------------------------------------------------------------------------------------------------------------------------------------- */
+  const footer = `
+  
+  `
+
