@@ -39,8 +39,11 @@
       document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('navbar-catalogo').innerHTML = nav_catalogo;
       });
+
       //**BACKGROUND PARA CADA CATEGORIA------------------------------------------------------------------------------------------------------------------------------------------------------ */
-      if(document.title != 'Dire Wolf | Catalogo' && document.title != 'Dire Wolf | Contacto' && document.title != 'Dire Wolf | Inicio'){
+      if(document.title != 'Dire Wolf | Catalogo' && 
+        document.title != 'Dire Wolf | Contacto' && 
+        document.title != 'Dire Wolf | Inicio'){
         back_img = {
           Florales: '../img/zbackback/back-flor.jpg',
           Calakas:  '../img/zbackback/back_calaka.jpg',
@@ -53,12 +56,13 @@
         }
         
         document.addEventListener('DOMContentLoaded', () => {
-            titulo = (document.title).split(" ");
-            cual = titulo[3];
+            titulo = (document.title).split(" ");//Covertir en lista o vector
+            cual = titulo[3];//luego selecionar el nombre de la categoria 
             document.body.style.backgroundImage = `url('${back_img[cual]}')`;
             document.body.style.backgroundSize = 'cover';
         });
       }
+
       //**MARCAR EL NAV EN DONDE ESTE------------------------------------------------------------------------------------------------------------------------------------------------------ */
       document.addEventListener('DOMContentLoaded', () =>{
 
