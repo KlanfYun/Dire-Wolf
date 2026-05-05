@@ -1,6 +1,7 @@
 /** FONTS--------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+/*TODO PREDEFINIDOS -----------------------------------------------------------------------------------------------------------------**/
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -22,7 +23,7 @@ body {
   box-sizing: border-box;
   }
 
-/**! Nav -----------------------------------------------------------------------------------------------------------*/
+/*! NAV -----------------------------------------------------------------------------------------------------------*/
 .logo{
   max-height: 40px;
   cursor: pointer;
@@ -52,9 +53,11 @@ nav {
   box-sizing: border-box;
   animation: aparece 1.5s ease-out forwards; /** Aqui la duracion de la animacion */
   animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
-  backdrop-filter: blur(20px);
+  filter: blur(20px);
+  backdrop-filter: blur(30px);
   box-shadow: 0 2px 0px rgba(255, 255, 255, 0.5);
   position: fixed;
+  transform: translateY(-60px);
   z-index: 10;
   gap: 20px;
 }
@@ -97,62 +100,38 @@ nav div{
   justify-content: center;
   display: flex;
 }
-
-/**Todo FLECHA -------------------------------------------------------------------------------------------------------------------------------*/
-.caja-flecha{
-  top: 84%;
-  left: 88%;
-  position: fixed;
-  z-index: 11;
-  justify-content: center;
-  display: grid;
+/*TODO INDEX ------------------------------------------------------------------------------------------------- */
+.body-index{
+  padding: auto;
 }
-.flecha{
-  position: absolute;
-  width: 60px;
-  z-index: 10;
-  cursor: pointer;
-  margin: auto 0;
-  transition: 0.5s ease-in-out;
-  filter: drop-shadow(0 0 5px rgb(50, 189, 96,0.5));
-}
-.flecha:hover{
-  animation: ani-flecha 1s; /** Se selecciona la anmimacion y duracion del evento*/
-  animation-delay: 0.5s;
-}
-   @keyframes ani-flecha {
-      25% {
-        transform: translateX(-10px);
-      }
-      50% {
-        transform: translateX(0);
-      }
-      75% {
-        transform: translateX(-10px);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-/*TODO Blouqes del index ------------------------------------------------------------------------------------------------- */
 .container-grandfather-index{
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: rgb(0, 194, 0) 1px solid;
+  border-radius:30px;
   background: linear-gradient(
     to right,
     rgb(170, 170, 170,1),
     rgb(39, 39, 39,0.5),
     rgb(39, 39, 39,0)
   );
-  margin: 20px auto;
-  width: 80%;
-  border: rgb(0, 194, 0) 1px solid;
-  border-radius:30px ;
 }
-.indexCaja-1{
-  /* border:solid 2px yellow; */
-  width:1000px;
+.caja-index{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  border: rgb(194, 20, 20) 1px solid;
 }
-/*!CONTAINERRRRRRR--------------------------------------------------------------------------------*/
+.caja-index-derecha{
+  border-radius:0px 30px 30px 0px;
+}
+.caja-index-izquierda{
+  border-radius:30px 0 0 30px;
+}
+/*!   CONTAINER -------------------------------------------------------------------------------------------------------*/
 .container-grandfather{
   width: 80%;
   margin: 0 auto;
@@ -194,7 +173,6 @@ nav div{
 }
 
 .container-child{
-  /* filter: blur(30px); */
   animation: scale-up-vertical-center 0.7s; /** Aqui la duracion de la animacion */
   animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
   margin: 0 auto;
@@ -250,12 +228,11 @@ nav div{
   color: white;
   margin: auto 0;
 }
-/**! PARA IMAGENES DE CADA CATEGORIA ----------------------------------------------------------------------------- */
+/**! PARA IMAGENES DE CADA CATEGORIA -------------------------------------------------------------------------------------------- */
 
 .img-cal{
-  /* filter: blur(30px); */
-  animation: scale-up-vertical-center 0.7s ease-out 1;  /*Aqui la duracion de la animacion */
-  animation-delay: 0s; /** Aqui se estable a q tiempo empieza la animation */
+  animation: scale-up-vertical-center 0.7s ease-out 1; 
+  animation-delay: 0s;
   padding: 0;
   display: grid;
   justify-content: center;
@@ -376,8 +353,10 @@ nav div{
     color: white;
     transition: 2s ease-in-out;
   }
-  /**? FOTER-------------------------------------------------------------------------------------------  */
+/*! FOTER-------------------------------------------------------------------------------------------*/
   footer{
+    opacity: 0;
+    transform: translateY(30px);
     width: 100%;
     height: 200px;
     margin-top: 30px;
@@ -387,7 +366,7 @@ nav div{
     backdrop-filter: blur(20px);
   }
 
-/*TODO Estilo para pantallas más pequeñas ----------------------------------------------------------------------*/
+/* TODO RESPOSIVE DESING ----------------------------------------------------------------------*/
   @media (max-width: 1000px) {
     .container-father {
       grid-template-columns: repeat(3,1fr);
@@ -441,7 +420,7 @@ nav div{
     
   }
 
-  /*? ANIMACIONES-------------------------------------------------------------------------- */
+/*? ANIMACIONES -------------------------------------------------------------------------------------------------------------------- */
   @keyframes aparece {
   to {
     opacity: 1;
@@ -463,7 +442,7 @@ nav div{
     filter: blur(0);
   }
 }
-/* Prendas echas-----------------------------------------------------------------------------------------------------------*/
+/*! PRENDAS ECHAS  -----------------------------------------------------------------------------------------------------------*/
 .imgListas{
   opacity: 0; /*Para la animacion*/
   filter: blur(30px);

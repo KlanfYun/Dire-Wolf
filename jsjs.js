@@ -8,7 +8,6 @@
               </div>
               <div>
               <ol>
-                <h2><a href="index.html">Inicio</a></h2>
                 <h2><a href="catalogo.html">Catalogo</a></h2>
                 <h2><a href="prendasEchas.html">Listas</a></h2>
               </ol>
@@ -28,7 +27,6 @@
               </div>
               <div>
                 <ol>
-                  <h2><a href="../index.html">Inicio</a></h2>
                   <h2><a href="../catalogo.html">Catalogo</a></h2>
                   <h2><a href="../prendasEchas.html">Listas</a></h2>
                 </ol>
