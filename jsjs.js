@@ -12,7 +12,6 @@
                 <h2><a href="prendasEchas.html">Listas</a></h2>
               </ol>
               </div>
-              <div><b class="Infooo">Hola</b></div>
               </nav>
               `
       document.addEventListener('DOMContentLoaded', () => {
