@@ -3,7 +3,7 @@
             <nav>
               <div>
                 <a href="index.html">
-                  <img class="logo" src="img/logo-texto.png" px="100" alt="Logo">
+                  <img class="logo" src="img/logo-texto.png">
                 </a>
               </div>
               <div>
@@ -30,7 +30,6 @@
                   <h2><a href="../prendasEchas.html">Listas</a></h2>
                 </ol>
               </div>
-              <div><b class="Infooo">Hola</b></div>
               </nav>
       `;
       document.addEventListener('DOMContentLoaded', () => {
