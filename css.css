@@ -1,22 +1,22 @@
 /** FONTS--------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-@import '../../../GITHUB/animate.css-main/animate.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import 'animate.css-main/animate.min.css';
 
 :root {
-  --font-main: 'Montserrat', sans-serif;
+  /* Variables para Automatización y Tematización */
   --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
+  --bg-secondary: rgba(255, 255, 255, 0.03);
   --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
-  --border-light: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.3);
-  --border-radius-sm: 5px;
-  --border-radius-md: 10px;
-  --border-radius-lg: 20px;
-  --transition-fast: 0.2s ease;
-  --transition-smooth: 0.3s ease;
-  --shadow-elegant: 0 5px 15px rgba(0, 0, 0, 0.5);
+  --text-secondary: #a0a0a0;
+  --border-light: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.2);
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --transition-fast: 0.3s ease;
+  --transition-smooth: 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-elegant: 0 15px 35px rgba(0, 0, 0, 0.4);
+  --font-main: 'Montserrat', sans-serif;
 }
 
 /*TODO PREDEFINIDOS -----------------------------------------------------------------------------------------------------------------**/
@@ -42,13 +42,12 @@ body {
 }
 
 /*! NAV -----------------------------------------------------------------------------------------------------------*/
-.logo{
-  animation: headShake 2s infinite; /* Aplica la animación de rebote */
+.logo {
+  animation: headShake 2s infinite; 
   max-height: 40px;
   cursor: pointer;
   margin: auto;
-  filter: brightness(0) invert(1) !important;
-  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0, 0.5));
+  filter: brightness(0) invert(1) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5)) !important;
 }
 
 ol {
@@ -91,19 +90,21 @@ nav div ol h2 a {
   color: var(--text-primary);
   background: none;
   border: none;
+  border-radius: var(--border-radius-sm);
   margin: auto;
   padding: 10px 15px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-nav div ol h2 a:hover {
-  color: var(--bg-primary);
+  transition: var(--transition-fast);
 }
 
 .justify-end {
   justify-content: flex-end;
   display: flex;
+}
+
+nav div ol h2 a:hover {
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
 }
 
 h1 {
@@ -133,9 +134,7 @@ nav div {
   display: flex;
 } 
 
-nav h2{
-  background-color: #333;
-  border-radius: 10px;
+nav h2 {
   margin-left: 5px;
 }
 
@@ -192,7 +191,7 @@ nav h2{
 
 .container-father {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 3fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 0 20px 80px 20px;
 }
@@ -228,6 +227,7 @@ nav h2{
 }
 
 .card-image-wrapper {
+  overflow: hidden;
   width: 100%;
   aspect-ratio: 4/5;
 }
@@ -468,18 +468,16 @@ footer {
     flex-wrap: wrap;
   }
   
+  .logo {
+    display: none;
+  }
+  
   .container-father {
     padding: 0 15px 100px 15px;
     margin-top: 0;
   }
 
-  .footer{
-    display: none;
-  }
-  nav {
-    animation: bounceInUp 2s ease-out forwards; /** Aqui la duracion de la animacion */
-  }
-  h1{
+  .titulo-elegante {
     margin-top: 40px;
   }
 }
