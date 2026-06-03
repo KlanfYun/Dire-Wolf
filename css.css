@@ -3,22 +3,6 @@
 @import '../../../GITHUB/animate.css-main/animate.min.css';
 @import 'animate.css-main/animate.min.css';
 
-:root {
-  --font-main: 'Montserrat', sans-serif;
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
-  --border-light: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.3);
-  --border-radius-sm: 5px;
-  --border-radius-md: 10px;
-  --border-radius-lg: 20px;
-  --transition-fast: 0.2s ease;
-  --transition-smooth: 0.3s ease;
-  --shadow-elegant: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
 /*TODO PREDEFINIDOS -----------------------------------------------------------------------------------------------------------------**/
 body {
   font-family: var(--font-main);
@@ -44,6 +28,7 @@ body {
 /*! NAV -----------------------------------------------------------------------------------------------------------*/
 .logo{
   animation: headShake 2s infinite; /* Aplica la animación de rebote */
+  animation: headShake 2s; /* Aplica la animación de rebote */
   max-height: 40px;
   cursor: pointer;
   margin: auto;
@@ -540,3 +525,4 @@ footer {
   font-weight: 300;
   text-align: center;
 }
+
