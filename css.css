@@ -1,23 +1,7 @@
 /** FONTS--------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import '../../../GITHUB/animate.css-main/animate.min.css';
 @import 'animate.css-main/animate.min.css';
-
-:root {
-  /* Variables para Automatización y Tematización */
-  --bg-primary: #121212;
-  --bg-secondary: rgba(255, 255, 255, 0.03);
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --border-light: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.2);
-  --border-radius-sm: 8px;
-  --border-radius-md: 16px;
-  --border-radius-lg: 24px;
-  --transition-fast: 0.3s ease;
-  --transition-smooth: 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-  --shadow-elegant: 0 15px 35px rgba(0, 0, 0, 0.4);
-  --font-main: 'Montserrat', sans-serif;
-}
 
 /*TODO PREDEFINIDOS -----------------------------------------------------------------------------------------------------------------**/
 body {
@@ -42,12 +26,14 @@ body {
 }
 
 /*! NAV -----------------------------------------------------------------------------------------------------------*/
-.logo {
-  animation: headShake 2s infinite; 
+.logo{
+  animation: headShake 2s infinite; /* Aplica la animación de rebote */
+  animation: headShake 2s; /* Aplica la animación de rebote */
   max-height: 40px;
   cursor: pointer;
   margin: auto;
-  filter: brightness(0) invert(1) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5)) !important;
+  filter: brightness(0) invert(1) !important;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0, 0.5));
 }
 
 ol {
@@ -132,7 +118,9 @@ nav div {
   display: flex;
 } 
 
-nav h2 {
+nav h2{
+  background-color: #333;
+  border-radius: 10px;
   margin-left: 5px;
 }
 
@@ -225,7 +213,6 @@ nav h2 {
 }
 
 .card-image-wrapper {
-
   width: 100%;
   aspect-ratio: 4/5;
 }
@@ -471,10 +458,16 @@ footer {
     margin-top: 0;
   }
 
-  .titulo-elegante {
+  .footer{
+    display: none;
+  }
+  nav {
+    animation: bounceInUp 2s ease-out forwards; /** Aqui la duracion de la animacion */
+  }
+  h1{
     margin-top: 40px;
   }
-}
+
 
 /*? ANIMACIONES -------------------------------------------------------------------------------------------------------------------- */
 @keyframes aparece {
@@ -531,4 +524,5 @@ footer {
   margin: 15px;
   font-weight: 300;
   text-align: center;
+}
 }
