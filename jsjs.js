@@ -37,7 +37,7 @@
       });
 
       //**BACKGROUND PARA CADA CATEGORIA------------------------------------------------------------------------------------------------------------------------------------------------------ */
-      if(document.title != 'Dire Wolf | Catalogo' && 
+      if(document.title != 'Dire Wolf | Colecciones' && 
         document.title != 'Dire Wolf | Contacto' && 
         document.title != 'Dire Wolf | Inicio'){
         back_img = {
