@@ -43,7 +43,7 @@ body {
 
 /*! NAV -----------------------------------------------------------------------------------------------------------*/
 .logo {
-  animation: headShake 2s infinite; 
+  animation: headShake 2s; 
   max-height: 40px;
   cursor: pointer;
   margin: auto;
@@ -60,6 +60,7 @@ ol {
 
 nav {
   animation: fadeInDownBig 1.5s ease-out forwards;
+  animation-delay: -0.8s;
   padding-left: 20px;
   justify-content: start;
   display: flex;
