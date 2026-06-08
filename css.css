@@ -456,33 +456,38 @@ footer {
     bottom: 0;
     top: auto;
     left: 0;
+    /* Alineación horizontal */
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    padding: 0 15px;
     z-index: 1000;
     height: auto;
+    min-height: 60px;
     border-top: 1px solid var(--border-light);
     border-bottom: none;
     animation: bounceInUp 1.5s ease-out forwards;
-    flex-direction: column; /* Apila el logo sobre los botones si es necesario */
   }
   
   nav div ol {
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: nowrap; /* Evita que los botones se amontonen en varias líneas */
+    gap: 2px;
   }
   
-  /* Ajuste de tamaño de letra para móviles */
+  /* Ajuste de tamaño de letra y espaciado */
   nav div ol h2 a {
-    font-size: 18px; /* Aumentado de 15px a 18px */
-    padding: 12px 10px;
+    font-size: 30px;
+    padding: 10px 8px;
+    white-space: nowrap;
   }
   
-  /* Se cambió display: none por block para que el logo sea visible */
   .logo {
-    display: block;
-    max-height: 35px;
-    margin: 5px auto 0 auto;
+    display: block !important; /* Forzamos visibilidad */
+    order: 2; /* Mueve el logo a la derecha del bloque de enlaces */
+    margin-left: 15px; /* Separación de los botones */
+    max-height: 30px;
+    animation: none; /* Quitamos la animación pesada en móvil para estabilidad */
   }
 
   .container-father {
