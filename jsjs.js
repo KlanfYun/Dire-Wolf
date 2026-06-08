@@ -36,8 +36,8 @@
         document.getElementById('navbar-catalogo').innerHTML = nav_catalogo;
       });
 
-      //**BACKGROUND PARA CADA CATEGORIA------------------------------------------------------------------------------------------------------------------------------------------------------ */
-      if(document.title != 'Dire Wolf | Colecciones' && 
+      //**BACKGROUND PARA CADA CATEGORIA-------------------------------------
+/*      if(document.title != 'Dire Wolf | Colecciones' && 
         document.title != 'Dire Wolf | Contacto' && 
         document.title != 'Dire Wolf | Inicio'){
         back_img = {
@@ -57,7 +57,7 @@
             document.body.style.backgroundImage = `url('${back_img[cual]}')`;
             document.body.style.backgroundSize = 'cover';
         });
-      }
+      } */
 
       //**MARCAR EL NAV EN DONDE ESTE------------------------------------------------------------------------------------------------------------------------------------------------------ */
       document.addEventListener('DOMContentLoaded', () =>{
