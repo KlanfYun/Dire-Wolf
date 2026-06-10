@@ -33,6 +33,23 @@ body {
   overflow-x: hidden; /* Evita que las animaciones rompan el ancho de página */
 }
 
+/* ── FONDO ANIMADO ────────────────────────────────────────── */
+ body::before {
+     content: '';
+     position: fixed;
+     inset: 0;
+     background:
+         radial-gradient(ellipse 80% 60% at 20% 30%, rgba(47, 106, 139, 0.18) 0%, transparent 65%),
+         radial-gradient(ellipse 60% 50% at 80% 70%, rgba(47, 106, 139, 0.12) 0%, transparent 60%),
+         repeating-linear-gradient(0deg,
+             transparent,
+             transparent 2px,
+             rgba(255, 255, 255, 0.012) 2px,
+             rgba(255, 255, 255, 0.012) 4px);
+     pointer-events: none;
+     z-index: 0;
+ }
+
 .item-center-x {
   display: grid;
   justify-content: center;  
@@ -99,6 +116,14 @@ nav div ol h2 a {
   transition: var(--transition-fast);
 }
 
+.nav2 {
+  display:none;
+  animation: fadeInDownBig 1.5s ease-out forwards;
+  animation-delay: -0.8s;
+  padding-left: 20px;
+  justify-content: start;
+}
+
 .justify-end {
   justify-content: flex-end;
   display: flex;
@@ -106,7 +131,6 @@ nav div ol h2 a {
 
 nav div ol h2 a:hover {
   color: var(--bg-primary);
-  background-color: var(--text-primary);
 }
 
 h1 {
@@ -144,22 +168,26 @@ nav h2 {
 .body-index {
   padding: 0;
   text-align: center;
+  display: grid;
+  justify-content: center; /* Centrado horizontal */
+ /*  align-items: center;     /* Centrado vertical */ 
 }
 
 .container-grandfather-index {
-  width: 100%;
+  transform: translateY(100px);
+  max-width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   border: 1px solid var(--border-light);
   border-radius: var(--border-radius-lg);
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.02),
+    rgb(127, 127, 127),
+    #2f6a8bd4,
     transparent
   );
+  margin: 50px 50px;
 }
 
 .caja-index {
@@ -167,6 +195,12 @@ nav h2 {
   text-align: center;
   width: 100%;
   border: 1px solid var(--border-light);
+}
+
+.caja-index img {
+  width: 80px;
+  margin-top: 20px;
+  filter: brightness(0) invert(1) !important;
 }
 
 .caja-index-derecha {
@@ -482,8 +516,15 @@ footer {
     white-space: nowrap;
   }
   
+.nav2 {
+    animation: bounceInUp 1.5s ease-out forwards;
+    justify-content: center; /* Centra el contenido en móvil */
+    border: 1px solid #ff0000;
+    display: grid;
+  }
+
   .logo {
-    display: block !important; /* Forzamos visibilidad */
+    display: block; /* Forzamos visibilidad */
     order: 2; /* Mueve el logo a la derecha del bloque de enlaces */
     margin-left: 15px; /* Separación de los botones */
     max-height: 30px;

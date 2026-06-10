@@ -1,36 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Dire Wolf | Inicio</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="icon" href="img/logo_lobo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VRTX — Playeras de Diseño</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="css.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<!-- NAV --------------------------------------------------------------------------------------------------------------->
-<div id="navbar"></div>
-<!-- BODY --------------------------------------------------------------------------------->
 
-<body class="body-index">
-    <div class="container-grandfather-index">
-        <div class="caja-index caja-index-izquierda">
-            <h2>1</h2>
-        </div>
-        <div class="caja-index caja-index-derecha">
-            <h2>2</h2>
-        </div>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar"></nav>
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="hero-deco">彡</div>
+    <div class="hero-badge">Diseño / Calidad / Identidad</div>
+    <h1>VISTE<br><em>DIFERENTE</em></h1>
+    <p class="hero-sub">Playeras de diseño exclusivo y prendas personalizadas. Cada pieza es una declaración. Sin compromisos, sin imitaciones.</p>
+    <div class="hero-buttons">
+      <a href="#catalogo" class="btn-primary">Ver catálogo completo</a>
+      <a href="#personalizar" class="btn-ghost">Haz la tuya →</a>
     </div>
-    <div class="container-grandfather-index">
-        <div class="caja-index caja-index-izquierda">
-            <h2>1</h2>
-        </div>
-        <div class="caja-index caja-index-derecha">
-            <h2>2</h2>
-        </div>
+  </div>
+
+  <!-- ── STATS ── -->
+  <div class="stats">
+    <div class="stat-item reveal">
+      <span class="stat-num">200+</span>
+      <span class="stat-lbl">Diseños únicos</span>
     </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-num">100%</span>
+      <span class="stat-lbl">Personalizable</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-num">48h</span>
+      <span class="stat-lbl">Tiempo de envío</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-num">5⭐</span>
+      <span class="stat-lbl">Valoración cliente</span>
+    </div>
+  </div>
+
+  <!-- ── PROPUESTA ── -->
+  <section id="nosotros">
+    <div class="section-label">Por qué VRTX</div>
+    <h2 class="section-title reveal">Más que<br>una playera</h2>
+    <p class="section-desc reveal">Una marca construida sobre diseño auténtico. Sin rostro, sin ego. Solo ideas que se convierten en tela.</p>
+    <div class="cards-grid">
+      <div class="glass-card reveal">
+        <div class="card-icon">🎨</div>
+        <div class="card-title">Diseño Propio</div>
+        <p class="card-text">Cada gráfico nace de un proceso creativo original. No hay templates, no hay copia. Solo ideas que rompen lo ordinario.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-1">
+        <div class="card-icon">✂️</div>
+        <div class="card-title">Corte Premium</div>
+        <p class="card-text">Telas seleccionadas, costuras limpias. Prendas que aguantan el tiempo sin perder forma ni color.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-2">
+        <div class="card-icon">🖨️</div>
+        <div class="card-title">Personalización Real</div>
+        <p class="card-text">Tu idea, nuestro proceso. Envíanos el concepto y lo convertimos en una pieza única, lista para ti o para regalar.</p>
+      </div>
+      <div class="glass-card reveal reveal-delay-3">
+        <div class="card-icon">📦</div>
+        <div class="card-title">Entrega Directa</div>
+        <p class="card-text">Empaque cuidado, envío rastreado. Tu pedido llega a donde estés, en el tiempo que prometemos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CATÁLOGO FEATURED ── -->
+  <section class="products-section" id="catalogo">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Lo más pedido</div>
+        <h2 class="section-title reveal">Prendas<br>Destacadas</h2>
+      </div>
+      <a href="catalogo.html" class="btn-primary reveal" style="align-self:flex-end">Ver todo el catálogo →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <div class="product-img">
+          👕
+          <span class="product-badge">Best seller</span>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Urban Void</div>
+          <div class="product-desc">Gráfico oversize en algodón pesado</div>
+          <div class="product-footer">
+            <span class="product-price">$380 MXN</span>
+            <a href="catalogo.html" class="btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-img">
+          🖤
+          <span class="product-badge">Nuevo</span>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Signal Drop</div>
+          <div class="product-desc">Minimalismo técnico, edición limitada</div>
+          <div class="product-footer">
+            <span class="product-price">$420 MXN</span>
+            <a href="catalogo.html" class="btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-img">
+          🌑
+        </div>
+        <div class="product-info">
+          <div class="product-name">Phantom Tee</div>
+          <div class="product-desc">Serigrafía a mano, tono oscuro</div>
+          <div class="product-footer">
+            <span class="product-price">$350 MXN</span>
+            <a href="catalogo.html" class="btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal reveal-delay-3">
+        <div class="product-img">
+          ✨
+          <span class="product-badge">Personalizable</span>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Custom Drop</div>
+          <div class="product-desc">Tu diseño impreso en 48 horas</div>
+          <div class="product-footer">
+            <span class="product-price">Desde $450 MXN</span>
+            <a href="#personalizar" class="btn-sm">Pedir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PERSONALIZAR ── -->
+  <section id="personalizar">
+    <div class="custom-section">
+      <div class="custom-visual">🎨</div>
+      <div>
+        <div class="section-label reveal">Haz la tuya</div>
+        <h2 class="section-title reveal">Playera<br>Personalizada</h2>
+        <p class="section-desc reveal">Traes la idea, nosotros la hacemos realidad. Diseño propio, nombre, fecha, logo — lo que imagines va en la prenda.</p>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-text">
+              <h4>Envíanos tu idea</h4>
+              <p>Manda el concepto por mensaje: texto, imagen de referencia o descripción.</p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <div class="step-num">02</div>
+            <div class="step-text">
+              <h4>Aprueba el diseño</h4>
+              <p>Te mandamos un mockup digital para que confirmes antes de imprimir.</p>
+            </div>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <div class="step-num">03</div>
+            <div class="step-text">
+              <h4>Recíbela en casa</h4>
+              <p>Producción y envío en 48–72 horas. Seguimiento incluido.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 2.5rem;" class="reveal">
+          <a href="mailto:contacto@vrtx.mx" class="btn-primary">Iniciar pedido personalizado</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BRAND MOMENT ── -->
+  <section class="brand-section">
+    <div class="brand-big reveal">VRTX</div>
+    <p class="brand-tagline reveal">La marca que no necesita cara</p>
+    <a href="#catalogo" class="btn-primary reveal">Explorar colección</a>
+  </section>
+
+  <!-- ── CTA / NEWSLETTER ── -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <div class="section-label reveal">Sé el primero</div>
+      <h2 class="section-title reveal">Nuevos drops,<br>sin spam</h2>
+      <p class="section-desc reveal" style="margin: 0 auto;">Entérate de lanzamientos exclusivos, descuentos y piezas limitadas. Sin ruido, solo lo que importa.</p>
+      <div class="email-row reveal">
+        <input type="email" placeholder="tu@correo.com" />
+        <button type="button">Suscribirme</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VRT<span>X</span></div>
+    <ul class="footer-links">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#personalizar">Personalizar</a></li>
+      <li><a href="#">Envíos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 VRTX — Todos los diseños son propiedad de la marca. Hecho en México 🇲🇽</p>
+  </footer>
+
+  <!-- ── SCROLL REVEAL JS ── -->
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+  <script src="jsjs.js"></script>
+
 </body>
-<!--TODO:FOOTER ------------------------------------------------------------------------------------------- -->
-<footer id="footer"></footer>
-<script src="jsjs.js" defer></script>
-
 </html>

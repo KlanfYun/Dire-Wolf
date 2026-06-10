@@ -13,6 +13,11 @@
               </ol>
               </div>
               </nav>
+              <nav class="nav2">
+                <a href="index.html">
+                  <img class="logo" src="img/logo-texto.png">
+                </a>
+              </nav> 
               `
       document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('navbar').innerHTML = nav;
@@ -30,6 +35,11 @@
                   <h2><a href="../prendasEchas.html">Listas</a></h2>
                 </ol>
               </div>
+              </nav>
+              <nav class="nav2">
+                <a href="index.html">
+                  <img class="logo" src="img/logo-texto.png">
+                </a>
               </nav>
       `;
       document.addEventListener('DOMContentLoaded', () => {
