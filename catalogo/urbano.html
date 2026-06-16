@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Dire Wolf | Urbano</title>
-    <link rel="stylesheet" href="../css.css">
     <link rel="icon" href="../img/logo_lobo.png">
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="../css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <!-- NAV --------------------------------------------------------------------------------------------------------------->
 <div id="navbar-catalogo"></div>
 <!-- BODY -->
+
 <body>
     <div class="container-grandfather">
         <h1 style="text-align: center; color:white">URBANO</h1>
@@ -44,34 +47,34 @@
     </div>
     <!-- **SCRIPT DE ZOOM------------------------------------------------------------------------------------------------------------- -->
     <script>
-    const miniaturas = document.querySelectorAll('.imagen-zoom');
-    const overlay = document.getElementById('zoomOverlay');
-    const imagenGrande = document.getElementById('zoomedImg');
+        const miniaturas = document.querySelectorAll('.imagen-zoom');
+        const overlay = document.getElementById('zoomOverlay');
+        const imagenGrande = document.getElementById('zoomedImg');
 
-    // Clic en cualquier miniatura
-    miniaturas.forEach(imagen => {
-      imagen.addEventListener('click', () => {
-        imagenGrande.src = imagen.src;
-        overlay.style.display = 'flex';
-      });
-    });
+        // Clic en cualquier miniatura
+        miniaturas.forEach(imagen => {
+            imagen.addEventListener('click', () => {
+                imagenGrande.src = imagen.src;
+                overlay.style.display = 'flex';
+            });
+        });
 
-    // Cerrar imagen ampliada
-    function cerrarZoom() {
-        overlay.style.display = 'none';
-        imagenGrande.src = '';
-    }
+        // Cerrar imagen ampliada
+        function cerrarZoom() {
+            overlay.style.display = 'none';
+            imagenGrande.src = '';
+        }
 
-    // Descargar imagen
-    function descargarImg() {
-      const enlace = document.createElement('a');
-      enlace.href = imagenGrande.src;
-      enlace.download = 'imagen-descargada.jpg';
-      enlace.click();
-    }
+        // Descargar imagen
+        function descargarImg() {
+            const enlace = document.createElement('a');
+            enlace.href = imagenGrande.src;
+            enlace.download = 'imagen-descargada.jpg';
+            enlace.click();
+        }
     </script>
-<!--TODO:FOOTER --------------------------------------------------------------------------------------------->
-<footer id="footer"></footer>
+    <!--TODO:FOOTER --------------------------------------------------------------------------------------------->
+  <footer id="footer"></footer>
 </body>
 <script src="../jsjs.js"></script>
 

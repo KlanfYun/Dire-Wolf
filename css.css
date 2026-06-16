@@ -68,6 +68,10 @@ body {
   filter: brightness(0) invert(1) drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5)) !important;
 }
 
+.logo-footer{
+  margin: 1px;
+}
+
 ol {
   display: flex;
   justify-content: center;
@@ -230,6 +234,7 @@ nav h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   padding: 0 20px 80px 20px;
+  margin-top: 20px;
 }
 
 .flex-colum {
@@ -516,14 +521,6 @@ footer {
     white-space: nowrap;
   }
 
-
-  .logo {
-    display: block; /* Forzamos visibilidad */
-    order: 2; /* Mueve el logo a la derecha del bloque de enlaces */
-    margin-left: 15px; /* Separación de los botones */
-    max-height: 30px;
-    animation: none; /* Quitamos la animación pesada en móvil para estabilidad */
-  }
 
   .container-father {
     padding: 0 15px 100px 15px;
