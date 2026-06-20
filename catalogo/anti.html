@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <title>Dire Wolf | Colecciones</title>
     <link rel="icon" href="img/logo_lobo.png"/>
-    <link rel="stylesheet" href="../index.css"/>
     <link rel="stylesheet" href="../css.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
+<body>
 <!-- NAV --------------------------------------------------------------------------------------------------------------->
 <div id="navbar-catalogo"></div>
 <!-- BODY -->
-<body>
     <div class="container-grandfather">
         <h1 style="text-align: center; color:white">ANTISOCIAL</h1>
         <div class="container-father">
@@ -30,8 +29,8 @@
     <div class="zoom-overlay" id="zoomOverlay">
         <img src="" alt="Imagen ampliada" id="zoomedImg">
         <div class="zoom-buttons">
-            <button onclick="cerrarZoom()">Cerrar</button>
-            <button onclick="descargarImg()">Descargar</button>
+            <button onclick="cerrarZoom()" class="btn-primary reveal">Cerrar</button>
+            <button onclick="descargarImg()" class="btn-primary reveal">Descargar</button>
         </div>
     </div>
     <!-- **SCRIPT DE ZOOM------------------------------------------------------------------------------------------------------------- -->

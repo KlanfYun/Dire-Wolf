@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Dire Wolf | Inicio</title>
     <link rel="icon" href="img/logo_lobo.png">
-    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="css.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
@@ -184,6 +183,27 @@
     </div>
   </section>
 
+  <section id="seleccionar-categoria" class="seleccionar-categoria">
+    <div class="categoria-layout">
+      <div class="categoria-texto">
+        <div class="section-label reveal">Navega rápido</div>
+        <h2 class="section-title reveal">Categoría de<br>Prendas</h2>
+        <p class="section-desc reveal">Explora nuestras colecciones y encuentra tu estilo ideal. Desliza las tarjetas para descubrir todas las categorías.</p>
+      </div>
+      <div class="categoria-carrusel reveal">
+        <button class="carrusel-btn carrusel-btn--left" id="carruselPrev" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carrusel-viewport">
+          <div class="carrusel-track" id="carruselTrack"></div>
+        </div>
+        <button class="carrusel-btn carrusel-btn--right" id="carruselNext" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- ── BRAND MOMENT ── -->
   <section class="brand-section">
     <img class="logo" src="img/logo-texto.png" alt="Logo de Dire Wolf">
@@ -198,7 +218,7 @@
       <h2 class="section-title reveal">Nuevos drops,<br>sin spam</h2>
       <p class="section-desc reveal" style="margin: 0 auto;">Entérate de lanzamientos exclusivos, descuentos y piezas limitadas. Sin ruido, solo lo que importa.</p>
       <div class="email-row reveal">
-        <input type="email" placeholder="tu@correo.com" />
+        <input type="email" placeholder="zthedirewolf@outlook.com" />
         <button type="button">Suscribirme</button>
       </div>
     </div>
@@ -206,20 +226,6 @@
 
   <!-- ── FOOTER ── -->
   <footer id="footer"></footer>
-
-  <!-- ── SCROLL REVEAL JS ── -->
-  <script>
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => observer.observe(el));
-  </script>
 
   <script src="jsjs.js"></script>
 
